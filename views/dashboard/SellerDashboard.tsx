@@ -542,9 +542,9 @@ export const SellerDashboard: React.FC<SellerDashboardProps> = ({
                     {isDevMode && (
                         <DevNote title="Order Processing State Machine">
                             Orders must transition strictly: <br/>
-                            1. PENDING (Buyer pays) -> <br/>
-                            2. VERIFYING (Anti-fraud check) -> <br/>
-                            3. DELIVERING (Seller notified) -> <br/>
+                            1. PENDING (Buyer pays) <br/>
+                            2. VERIFYING (Anti-fraud check)<br/>
+                            3. DELIVERING (Seller notified)<br/>
                             4. COMPLETED (Buyer confirms / Auto-confirm timer).
                         </DevNote>
                     )}
