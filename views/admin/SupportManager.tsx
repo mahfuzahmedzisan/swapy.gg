@@ -53,7 +53,7 @@ export const SupportManager: React.FC<{ subTab: string }> = ({ subTab }) => {
             <>
                 <DevNote title="Auto-Routing Algorithm">
                     Implement logic to auto-assign tickets to staff based on: <br/>
-                    1. <strong>Ticket Type:</strong> 'Billing' -> Finance Team, 'Report' -> Moderators. <br/>
+                    1. <strong>Ticket Type:</strong> 'Billing' - Finance Team, 'Report' - Moderators. <br/>
                     2. <strong>Staff Load:</strong> Assign to the online agent with the fewest open tickets.
                 </DevNote>
                 <GenericModule<Ticket> title="Support Tickets" data={tickets}

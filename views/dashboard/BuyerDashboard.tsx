@@ -22,7 +22,7 @@ export const BuyerDashboard: React.FC<{ isDevMode?: boolean }> = ({ isDevMode })
        {isDevMode && (
            <DevNote title="Order State Logic">
                1. <strong>Wallet Security:</strong> Funds are held in a virtual wallet. Deposits via Stripe/Crypto should update the `walletBalance` column in DB atomically. <br/>
-               2. <strong>Order Status:</strong> PENDING -> DELIVERING (Money in Escrow) -> COMPLETED (Money to Seller).
+               2. <strong>Order Status:</strong> PENDING - DELIVERING (Money in Escrow) - COMPLETED (Money to Seller).
            </DevNote>
        )}
 

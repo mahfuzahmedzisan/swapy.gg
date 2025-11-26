@@ -111,8 +111,8 @@ export const FinanceManager: React.FC<FinanceManagerProps> = ({ subTab }) => {
              <div className="space-y-6">
                  <h2 className="text-2xl font-bold text-white">Withdrawal Requests</h2>
                  <DevNote title="ACID Transactions & Security">
-                     <strong>1. Atomic Operation:</strong> Approving a withdrawal must be wrapped in a DB transaction block: `BEGIN` -> Deduct Wallet -> Create Withdrawal Record -> `COMMIT`. <br/>
-                     <strong>2. Manual Review:</strong> For amounts > $500, flag for manual admin approval (require 2FA to approve).
+                     <strong>1. Atomic Operation:</strong> Approving a withdrawal must be wrapped in a DB transaction block: `BEGIN` - Deduct Wallet - Create Withdrawal Record - `COMMIT`. <br/>
+                     <strong>2. Manual Review:</strong> For amounts - $500, flag for manual admin approval (require 2FA to approve).
                  </DevNote>
                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                      {withdrawals.map(w => (
@@ -213,7 +213,7 @@ export const FinanceManager: React.FC<FinanceManagerProps> = ({ subTab }) => {
             <DevNote title="Escrow State Logic">
                 The Escrow wallet is a system-owned wallet. Funds sit here with a `order_id` tag. <br/>
                 Funds are only released when `order.status` transitions to `COMPLETED`. <br/>
-                Implement a cron job to auto-release funds if `status == DELIVERED` for > 48 hours and no dispute exists.
+                Implement a cron job to auto-release funds if `status == DELIVERED` for - 48 hours and no dispute exists.
             </DevNote>
             <div className="p-8 text-white bg-nexus-card rounded border border-nexus-border">Escrow Monitor: 14 Active Safe Trades</div>
         </div>
